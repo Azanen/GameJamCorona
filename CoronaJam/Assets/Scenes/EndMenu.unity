@@ -261,10 +261,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -318,8 +318,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -251}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: -166}
+  m_SizeDelta: {x: 233.8, y: 41.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &335917584
 MonoBehaviour:
@@ -393,8 +393,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 42dc66a868d645041902b96b1ccd7bc1, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -424,6 +424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finalScore: {fileID: 0}
+  scoreNPC: {fileID: 0}
 --- !u!1 &569204439
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,10 +583,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -639,8 +640,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -197.3}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: -95}
+  m_SizeDelta: {x: 233.8, y: 41.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1189851703
 MonoBehaviour:
@@ -655,6 +656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finalScore: {fileID: 0}
+  scoreNPC: {fileID: 0}
 --- !u!114 &1189851704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -727,8 +729,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 4d7378825114e544da5c96949d93e34d, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -779,8 +781,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000076294, y: 0.000011444}
-  m_SizeDelta: {x: 289.8, y: 111.7}
+  m_AnchoredPosition: {x: -0.0000076294, y: 69.76}
+  m_SizeDelta: {x: 289.8, y: 142.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1309869177
 MonoBehaviour:
@@ -918,6 +920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finalScore: {fileID: 1309869177}
+  scoreNPC: {fileID: 977728514084842952, guid: 3d86477e1b47bea40bf7d990bfd0d67c, type: 3}
 --- !u!4 &1921214532
 Transform:
   m_ObjectHideFlags: 0

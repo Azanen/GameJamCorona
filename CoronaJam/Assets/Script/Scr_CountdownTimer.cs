@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Scr_CountdownTimer : MonoBehaviour
 {
     private float currentTime = 0f;
-    private float startingTime = 25f; //duree en seconde du Timer
+    private float startingTime = 300f; //duree en seconde du Timer => 60 = 1 min
     public Scr_Manager manager;
     public Text countdownText;
     public Image potionInventory;

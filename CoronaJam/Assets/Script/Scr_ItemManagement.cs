@@ -30,12 +30,12 @@ public class Scr_ItemManagement : MonoBehaviour
         {
             Give();
         }
-        if (npc.produit_1 == 0 && npc.produit_2 == 0)
+        if (npc != null && npc.produit_1 == 0 && npc.produit_2 == 0)
         {
             servi = true;
             npc.besoinAtteint = true;
         }
-        if (npc.transform.position == npc.waypoints[3].transform.position)
+        if (npc != null && npc.transform.position == npc.waypoints[3].transform.position)
         {
             if (npc.boolOnce && npc.name == "oto_NPC")
             {

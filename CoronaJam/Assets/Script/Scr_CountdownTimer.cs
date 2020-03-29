@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement; // Scenes Loading
+
 
 public class Scr_CountdownTimer : MonoBehaviour
 {
@@ -28,7 +30,7 @@ public class Scr_CountdownTimer : MonoBehaviour
 
         if (currentTime <= 0)
         {
-            currentTime = 0; //si timer descent en bas de 0, il va rester a 0. Fonction a 
+            currentTime = 0; //si timer descend en bas de 0, et va aller a la scene ENDGAME
             EndMenu();
         }
         potionInventory.fillAmount = (float) manager.potionNbr / 5;
@@ -41,7 +43,8 @@ public class Scr_CountdownTimer : MonoBehaviour
 
     void EndMenu()
     {
-        Application.LoadLevel("EndMenu");
+        //Application.LoadLevel("EndMenu");
+        SceneManager.LoadScene("EndMenu");
     }
 
     

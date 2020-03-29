@@ -15,5 +15,6 @@ public class Scr_MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+  
 
 }

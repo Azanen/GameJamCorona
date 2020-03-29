@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Scr_CountdownTimer : MonoBehaviour
 {
     private float currentTime = 0f;
-    private float startingTime = 300f; //duree en seconde du Timer => 60 = 1 min
+    private float startingTime = 15f; //duree en seconde du Timer => 60 = 1 min
     public Scr_Manager manager;
     public Text countdownText;
     public Image potionInventory;
@@ -29,11 +29,20 @@ public class Scr_CountdownTimer : MonoBehaviour
         if (currentTime <= 0)
         {
             currentTime = 0; //si timer descent en bas de 0, il va rester a 0. Fonction a 
-            //ajouter pour redemarrer lvl ou menu
+            EndMenu();
         }
         potionInventory.fillAmount = (float) manager.potionNbr / 5;
         maskInventory.fillAmount = (float)manager.maskNbr / 5;
         totalInventory.fillAmount = (float)manager.total / 5;
       
     }
+
+    //Mes Functions
+
+    void EndMenu()
+    {
+        Application.LoadLevel("EndMenu");
+    }
+
+    
 }

@@ -36,9 +36,12 @@ public class Scr_NPC : MonoBehaviour
 
     public TextMeshProUGUI needing;
 
+    public Animator animatorNPC;
+
     // Start is called before the first frame update
     void Start()
     {
+        animatorNPC = this.GetComponent<Animator>();
         needing = this.gameObject.GetComponentInChildren<TextMeshProUGUI>();
         boolOnce = true;
         elManager = GameObject.Find("Manager").GetComponent<Scr_Manager>();
@@ -48,6 +51,8 @@ public class Scr_NPC : MonoBehaviour
         satisfactionBar.value = CalculBar();
 
         transform.position = waypoints[waypointIndex].transform.position; //fait apparaitre le NPC sur le 1er Waypoint 0
+       // animatorNPC.SetBool("walkingRight", true);
+
     }
 
     // Update is called once per frame
@@ -75,7 +80,16 @@ public class Scr_NPC : MonoBehaviour
         {
             needing.text = "Thank you!";
             besoinAtteint = true;
-            countdownActive = false; 
+            countdownActive = false;
+            if (waypoints[waypointIndex].name == "Waypoint (2)")
+            {
+                animatorNPC.SetBool("walkingDown", true);
+            }
+            if (waypoints[waypointIndex].name == "WP2")
+            {
+                animatorNPC.SetBool("walkingDown", true);
+            }
+
         }
         if (transform.position == waypoints[4].transform.position) //va se deplacer hors de l'ecran
         {
@@ -96,9 +110,6 @@ public class Scr_NPC : MonoBehaviour
             needing.text = "Way too long... I'm losing my time here!";
             Move();
         }
-
-       
-
 
     }
 
@@ -123,7 +134,42 @@ public class Scr_NPC : MonoBehaviour
        
         if (transform.position == waypoints[waypointIndex].transform.position)
         {
+            // left lane
+            if (waypoints[waypointIndex].name == "Waypoint")
+            {
+                animatorNPC.SetBool("walkingRight", true);
+            }
+            if (waypoints[waypointIndex].name == "Waypoint (1)")
+            {
+                animatorNPC.SetBool("walkingRight", false);
+            }
+
+            if (waypoints[waypointIndex].name == "Waypoint (2)")
+            {
+                animatorNPC.SetBool("walkingDown", false);
+
+                animatorNPC.SetBool("walkingLeft", true);
+            }
+            //right lane
+            if (waypoints[waypointIndex].name == "WP")
+            {
+                animatorNPC.SetBool("walkingLeft", true);
+            }
+            if (waypoints[waypointIndex].name == "WP1")
+            {
+                animatorNPC.SetBool("walkingLeft", false);
+            }
+
+            if (waypoints[waypointIndex].name == "WP2")
+            {
+                animatorNPC.SetBool("walkingDown", false);
+
+                animatorNPC.SetBool("walkingRight", true);
+            }
+
             waypointIndex++;
+
+
         }
 
     }

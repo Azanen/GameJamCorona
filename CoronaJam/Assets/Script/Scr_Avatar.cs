@@ -10,6 +10,9 @@ public class Scr_Avatar : MonoBehaviour
     //private int Speed = 5;
     public Animator animatorAvatar;
     public bool canMove = true;
+    public LayerMask ground;
+    public bool inCollision;
+    public float rayon = 0.1f;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +24,8 @@ public class Scr_Avatar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (canMove)
+        inCollision = Physics2D.OverlapCircle(tr.position, rayon, ground);
+        if (!inCollision)
         {
             tr.Translate(new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0f) * Time.deltaTime * 100f, Space.World); //hori AD; verti WS, pas de Z, Time.deltaTime * Vitesse ajustable
 

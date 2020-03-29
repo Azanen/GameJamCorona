@@ -9,8 +9,6 @@ public class Scr_ItemManagement : MonoBehaviour
     public Scr_NPC npc;
     public bool dropOffAllowed = false;
     public bool servi = false;
-    public AudioSource bottleClink;
-    public AudioSource MaskTaking;
     // Start is called before the first frame update
     void Start()
     {
@@ -84,18 +82,12 @@ public class Scr_ItemManagement : MonoBehaviour
     {
         if (this.CompareTag("PotionShelf") && manager.total < 5)
         {
-            bottleClink.time = 1.0f;
-            bottleClink.Play();
-            bottleClink.SetScheduledEndTime(AudioSettings.dspTime + (2.0f - 1.0f));
             manager.potionNbr++;
             manager.total++;
            
         }
         if (this.CompareTag("MaskShelf") && manager.total < 5)
         {
-            MaskTaking.time = 0.5f;
-            MaskTaking.Play();
-            MaskTaking.SetScheduledEndTime(AudioSettings.dspTime + (1.5f - 0.5f));
             manager.maskNbr++;
             manager.total++;
         }

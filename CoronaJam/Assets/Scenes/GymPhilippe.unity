@@ -301,6 +301,95 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1908612250}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &627938666
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 246328236, guid: 3d86477e1b47bea40bf7d990bfd0d67c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 246328236, guid: 3d86477e1b47bea40bf7d990bfd0d67c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 246328236, guid: 3d86477e1b47bea40bf7d990bfd0d67c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1313671547, guid: 3d86477e1b47bea40bf7d990bfd0d67c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1313671547, guid: 3d86477e1b47bea40bf7d990bfd0d67c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 190425661581221699, guid: 3d86477e1b47bea40bf7d990bfd0d67c,
+        type: 3}
+      propertyPath: m_Name
+      value: oto_NPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 190425661581221703, guid: 3d86477e1b47bea40bf7d990bfd0d67c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -300
+      objectReference: {fileID: 0}
+    - target: {fileID: 190425661581221703, guid: 3d86477e1b47bea40bf7d990bfd0d67c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -44
+      objectReference: {fileID: 0}
+    - target: {fileID: 190425661581221703, guid: 3d86477e1b47bea40bf7d990bfd0d67c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 190425661581221703, guid: 3d86477e1b47bea40bf7d990bfd0d67c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 190425661581221703, guid: 3d86477e1b47bea40bf7d990bfd0d67c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 190425661581221703, guid: 3d86477e1b47bea40bf7d990bfd0d67c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 190425661581221703, guid: 3d86477e1b47bea40bf7d990bfd0d67c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 190425661581221703, guid: 3d86477e1b47bea40bf7d990bfd0d67c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 190425661581221703, guid: 3d86477e1b47bea40bf7d990bfd0d67c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 190425661581221703, guid: 3d86477e1b47bea40bf7d990bfd0d67c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 190425661581221703, guid: 3d86477e1b47bea40bf7d990bfd0d67c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3d86477e1b47bea40bf7d990bfd0d67c, type: 3}
 --- !u!1 &1207408054
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,6 +980,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Proto_Avatar
       objectReference: {fileID: 0}
+    - target: {fileID: 1095801626878734982, guid: 211dbcce815093c4cad20caf0e0fcfcb,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 37f32edd3f8b91a468bb3666dafe4f95,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 211dbcce815093c4cad20caf0e0fcfcb, type: 3}
 --- !u!1001 &1972952998

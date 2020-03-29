@@ -710,8 +710,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: bfab4079ee3e1af45a954018f33dc8ea, type: 3}
-  m_Color: {r: 0.98039216, g: 0.043137226, b: 0.91648245, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b7c8e13f0170ba147ae45af303e8246e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -752,7 +752,7 @@ Animator:
   m_GameObject: {fileID: 190425661581221699}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: affc833bea95124409e9c92c1bebe0b7, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3a8c6aa60ec17ff4a8b99b3e4fefc33c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -807,6 +807,7 @@ MonoBehaviour:
   satisfactionPoint: 25
   satisfactionMaxPoint: 100
   satisfactionBar: {fileID: 1760055779}
+  countdownActive: 1
   score: 0
   canGiveScore: 1
   moveSpeed: 50
@@ -817,3 +818,4 @@ MonoBehaviour:
   - {fileID: 699063111034534089, guid: d78fede908621af4eaaf3fee7eb45cce, type: 3}
   - {fileID: 3821505516508633686, guid: 40326c246cc81a443a7466f13885e925, type: 3}
   needing: {fileID: 0}
+  animatorNPC: {fileID: 0}

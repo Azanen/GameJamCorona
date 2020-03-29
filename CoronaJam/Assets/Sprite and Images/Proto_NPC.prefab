@@ -94,9 +94,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 791e2b27b950ea04e833dfa7f66fdee0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  produitBesoin_1: 0
-  produitBesoin_2: 0
-  currentProduit_1: 0
-  currentProduit_2: 0
-  NPCNeed: {fileID: 0}
+  elManager: {fileID: 0}
+  produit_1: 0
+  produit_2: 0
+  besoinAtteint: 0
+  boolOnce: 0
   satisfactionPoint: 100
+  satisfactionMaxPoint: 100
+  satisfactionBar: {fileID: 0}
+  countdownActive: 1
+  score: 0
+  canGiveScore: 1
+  moveSpeed: 50
+  waypoints: []
+  needing: {fileID: 0}
+  animatorNPC: {fileID: 0}
